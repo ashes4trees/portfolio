@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Stephanie Soni</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init("user_IiDbg9ssBMqqZGB9vaJav");
+			})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function () {
+				const form = document.getElementById('contact-form');
+				const thanks = document.querySelector('.thanks');
+				form.addEventListener('submit', function (event) {
+					event.preventDefault();
+					form.classList.add('hidden');
+					thanks.classList.remove('hidden');
+					this.contact_number.value = Math.random() * 100000 | 0;
+					emailjs.sendForm('portfolio_site', 'portfolio_template', this)
+						.then(function () {
+							console.log('SUCCESS!');
+						}, function (error) {
+							console.log('FAILED...', error);
+						});
+				});
+	
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#skills" class="icon solid fas fa-book"><span>Skills</span></a>
+						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="#links" class="icon solid fas fa-link"><span>Links</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Stephanie Soni</h1>
+									<h3>Software Engineer</h3>
+									<p>I'm a web developer with frontend and backend expertise. 
+										My passion is creating positive user experiences.  
+									</p>
+									<p>Check out my full resume 
+										<a href="assets/docs/stephanie_soni_resume.pdf" target="_blank">here.</a></p>
+								</header>
+								<a href="#skills" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>Find out more</span></span>
+									<img src="images/headshot.jpg" alt="" />
+								</a>
+							</article>
+
+							<!-- Skills -->
+							<article id="skills" class="panel">
+								<header>
+									<h2>Skills</h2>
+								</header>
+								<section class="skill-list">
+									<div>
+										<i class="devicon-react-original colored"></i>
+										<p>React</p>
+									</div>
+									<div>
+										<i class="devicon-redux-original colored"></i>
+										<p>Redux</p>
+									</div>
+									<div>
+										<i class="devicon-ruby-plain colored"></i>
+										<p>Ruby</p>
+									</div>
+									<div>
+										<i class="devicon-rails-plain colored"></i>
+										<p>Rails</p>
+									</div>
+									<div>
+										<i class="devicon-javascript-plain colored"></i>
+										<p>JavaScript</p>
+									</div>
+									<div>
+										<i class="devicon-html5-plain colored"></i>
+										<p>HTML5</p>
+									</div>
+									<div>
+										<i class="devicon-css3-plain colored"></i>
+										<p>CSS3</p>
+									</div>
+									<div>
+										<i class="devicon-threejs-original colored"></i>
+										<p>Three.js</p>
+									</div>
+									<div>
+										<i class="devicon-socketio-original colored"></i>
+										<p>Socket.io</p>
+									</div>
+									<div>
+										<i class="devicon-mongodb-plain colored"></i>
+										<p>MongoDB</p>
+									</div>
+									<div>
+										<i class="devicon-express-original colored"></i>
+										<p>Express.js</p>
+									</div>
+									<div>
+										<i class="devicon-nodejs-plain colored"></i>
+										<p>Node.js</p>
+									</div>
+							
+								</section>
+
+								<a href="#work" >
+									<span class="arrow icon solid fa-chevron-right"></span>
+								</a>
+								
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Work</h2>
+								</header>
+	
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://ashes4trees.github.io/back_to_breath" 
+												class="image fit"
+												target="_blank"><img src="images/back_to_breath_screenshot.png" ></a>
+											<h3>Back to Breath</h3>
+											<p>A meditative 3D animation experience, created with vanilla JavaScript and the Three.js library. (Solo)</p>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="http://napflix.herokuapp.com/#/" 
+												class="image fit"
+												target="_blank"><img src="images/napflix_browse_top.png" alt=""></a>
+											<h3>Napflix</h3>
+											<p>A clone of Netflix built with Ruby on Rails, PostgreSQL, React, Redux, and AWS cloud storage for media assets. (Solo)</p>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+											<h3>Pictophone</h3>
+											<p>A fast-paced multiplayer pictionary-telephone hybrid integrating MongoDB, Express.js, Mongoose, React, Redux, socket.io, AWS S3 and canvas API. (Team Lead)</p>
+										</div>
+									</div>
+								</section>
+
+								<a href="#contact">
+									<span class="arrow icon solid fa-chevron-right"></span>
+								</a>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+									
+										<p>Use the form below or email me at 
+											<a href="mailto:stephsoni18@gmail.com" 
+											target="_blank">stephsoni18@gmail.com.</a></p>
+									
+								</header>
+								<h3 class='thanks hidden'>Thank you. I look forward to speaking with you soon!</h3>
+								<form id='contact-form' method="post">
+									<input type="hidden" name="contact_number">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+
+								<a href="#links">
+									<span class="arrow icon solid fa-chevron-right"></span>
+								</a>
+							</article>
+
+							<!-- Links -->
+							<article id="links" class="panel">
+								<header>
+									<h2>Connect With Me</h2>
+									<div class="link-list">
+										<i class="devicon-github-original colored"></i>
+										<i class="devicon-linkedin-plain colored"></i>
+									</div>
+
+								</header>
+								
+								<a href="#">
+									<span class="arrow icon solid fa-chevron-right"></span>
+								</a>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Stephanie Soni</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

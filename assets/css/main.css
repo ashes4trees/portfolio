@@ -2214,7 +2214,7 @@ input, select, textarea {
 		
 	}
 
-	.link-list i {
+	.link-list a {
 		margin-top: 40px;
 		cursor: pointer;
 		

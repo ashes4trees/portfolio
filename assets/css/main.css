@@ -1778,9 +1778,23 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
+		width: 100%;
+		display: flex;
+		justify-content: center;
 		text-align: center;
 		height: 4.25em;
 		cursor: default;
+		margin-bottom: 10px;
+	}
+
+	#nav .label {
+		color: white;
+		opacity: 0.35;
+		outline: 0;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+		-ms-transition: opacity .25s ease-in-out;
+		transition: opacity .25s ease-in-out;
 	}
 
 		#nav a {
@@ -1791,7 +1805,7 @@ input, select, textarea {
 			height: 1em;
 			line-height: 0.9em;
 			font-size: 2.5em;
-			margin: 0 0.25em 0 0.25em;
+			margin: 0 0.5em 0 0.5em;
 			opacity: 0.35;
 			outline: 0;
 			-moz-transition: opacity .25s ease-in-out;

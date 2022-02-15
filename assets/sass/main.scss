@@ -526,6 +526,7 @@
 /* Nav */
 
 	#nav {
+		min-width: 100%;
 		text-align: center;
 		height: 4.25em;
 		cursor: default;
@@ -859,3 +860,7 @@
 			}
 		}
 	}
+
+.label {
+	font-size: 14px;
+}

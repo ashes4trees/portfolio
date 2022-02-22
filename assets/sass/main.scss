@@ -566,6 +566,7 @@
 			}
 
 			span {
+				
 				display: block;
 				position: absolute;
 				background: #222222;
@@ -583,6 +584,7 @@
 
 				&:after {
 					content: '';
+					font-weight: 400;
 					display: block;
 					position: absolute;
 					bottom: -0.4em;
